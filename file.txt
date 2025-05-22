@@ -1,0 +1,49 @@
+JavaScript / Node.js (Logic & Async)
+Write a function to flatten a deeply nested object.
+Concept tested: Recursion, object traversal (useful for mapping Salesforce data).
+
+Implement a retry mechanism for a failed API request.
+Concept tested: Error handling, backoff logic (relevant in Salesforce integrations).
+
+Difference between process.nextTick, Promise, setTimeout – give examples.
+
+🔌 Express.js (like Apex REST Controllers)
+Create an Express API endpoint that returns user orders and order items from MongoDB.
+Simulates SOQL joins and Salesforce REST endpoints.
+
+Add a middleware that validates a request header token before accessing any route.
+Similar to Auth mechanisms using Named Credentials in Salesforce.
+
+🌐 API Integration
+Consume a third-party REST API (like GitHub) in Node.js and store results in MongoDB.
+Equivalent to calling external services using Apex Http methods.
+
+Upload an image and store its URL in MongoDB using multer and AWS S3.
+
+🧾 MongoDB (Compare with Salesforce Data Model)
+Design MongoDB schemas for a Customer, Orders, Products, and OrderItems (normalized + embedded).
+Map this understanding to Salesforce objects and relationships.
+
+Write an aggregation query to calculate total revenue per customer.
+
+Create compound and text indexes on a collection and explain how they improve query performance.
+
+⚛️ React (Relates to LWC)
+Build a form with dynamic validation (email, phone, PAN) and submit it to a backend API.
+
+Build a component with two dropdowns where the second depends on the first (e.g., country → states).
+This logic is very similar to how picklists and dependent fields work in Salesforce.
+
+Create a chat component using Socket.IO with typing indicators and user status.
+
+💾 Full-Stack Challenge
+**Build a basic user management dashboard with:
+
+Signup/login (JWT)
+
+Profile CRUD (MongoDB)
+
+Role-based access
+
+Server-side pagination and search**
+
