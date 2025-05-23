@@ -1,16 +1,27 @@
-// swap the 2 numbers without using 3rd variable
+// sort array
+const arrayToBeSorted = [-1, 99, 3, -88, 70, 888, -777];
 
-let a = 10,
-  b = 20;
+Array.prototype.mergeSort = function (...args) {
+  console.log("Arguments:", args);
 
-// a = a + b;
-// b = a - b;
-// a = a - b;
+  // step 1 - divide
+  const mergeSort = (arr) => {
+    if (arr.length <= 1) return arr;
 
-function swap(x, y) {
-  return [y, x];
-}
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
 
-[a, b] = swap(a, b);
+    return merge(left, right);
+  };
 
-console.log(a, b);
+  const merge = (left, right) => {
+    console.log(left);
+    console.log(right);
+  };
+
+  return mergeSort([...this]);
+  // if no return is added, it will by default return undefined
+};
+
+console.log(arrayToBeSorted.mergeSort("asc"));
